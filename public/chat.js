@@ -43,9 +43,9 @@ function createMessage(data) {
   messageDiv.innerHTML += `
     <div class="new_message">
       <label class="form-label">
-        <strong>${data.username}</strong> 
-        <span>${data.text} - ${dayjs(data.createdAt).format("DD/MM HH:mm")}</span>
+        <p>${data.text}</p>
       </label>
+        <span>${dayjs(data.createdAt).format("DD/MM HH:mm")} | ${data.username}</span>
     </div>
   `
 }

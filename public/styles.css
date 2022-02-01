@@ -1,25 +1,31 @@
-body {
-  outline: none;
-  cursor: pointer;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 form {
   display: flex;
   flex-direction: row;
 
-  margin: 10px;
+  margin: 140px 10px 10px 10px;
   padding: 5px;
-
-  margin-top: 140px;
 }
 
 button {
-  width: 400px;
+  width: 100px;
   height: 40px;
-  background: #4b9847;
+  background: #6d3793;
   outline: none;
+  border: 0;
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 button:hover {
@@ -28,37 +34,120 @@ button:hover {
 
 select,
 input {
-  width: 400px;
-  height: 30px;
-  padding: 5px 0px;
   outline: none;
-}
-
-.row {
-  padding: 5px 0px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 18px;
 }
 
 .container {
   display: flex;
   width: 100%;
+  height: 500px;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
 }
 
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  border: 1px solid rgb(75, 75, 75);
+  width: 750px;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
 .new_message {
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  padding: 10px;
+}
+
+.new_message .form-label {
+  padding: 10px 15px;
+  border-radius: 8px 8px 0px 8px;
+  background-color: rgba(70, 68, 143, 0.76);
+  
+}
+
+.new_message .form-label p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.87);
+  word-break: break-all;
+}
+
+.new_message span {
+  font-size: 12px;
+}
+
+.info-user {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #message_input {
   margin-top: 50px;
+  text-transform: capitalize;
 }
 
 .logout {
-  background: rgb(56, 3, 3);
+  background: #6d3793;
   cursor: pointer;
+}
+
+
+#chat_content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.form-control {
+  padding: 14px 26px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+#username {
+  text-align: center;
+}
+
+.row-room #select_room {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+}
+
+#select_room option {
+  padding: 5px 0;
+}
+
+.row-user-enter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.row-user-enter input {
+  height: 40px;
+  padding: 5px 9px;
+}
+
+.row-1 button {
+  margin-top: 15px;
+}
+
+.messages {
+  padding-bottom: 10px;
 }

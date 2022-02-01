@@ -12,7 +12,7 @@
 <body>
   <form action="chat.html">
     <div class="container">
-      <div class="row">
+      <div class="row-room">
         <select name="select_room" id="select_room">
           <option value="-1">Selecione a sala</option>
           <option value="NodeJS">NodeJS</option>
@@ -22,12 +22,12 @@
         </select>
       </div>
 
-      <div class="row">
+      <div class="row-user-enter">
         <label class="form-label">Digite seu usuário</label>
-        <input type="text" name="username" placeholder="username">
+        <input type="text" name="username" placeholder="username" autocomplete="off">
       </div>
 
-      <div class="row">
+      <div class="row-1">
         <button type="submit" class="btn btn-primary nb-3">Entrar</button>
       </div>
     </div>
